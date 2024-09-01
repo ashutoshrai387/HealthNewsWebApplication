@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "4K9+sOyE+7z/D/g/hjRO0NewDaoe0RRJeTbyVvCpWeU=",
+  "Source": "HealthNewsWebApplication",
+  "BasePath": "_content/HealthNewsWebApplication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HealthNewsWebApplication\\wwwroot",
+      "Source": "HealthNewsWebApplication",
+      "ContentRoot": "D:\\Ashutosh\\Rxefy Tech\\HealthNewsWebApplication\\HealthNewsWebApplication\\wwwroot\\",
+      "BasePath": "_content/HealthNewsWebApplication",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Ashutosh\\Rxefy Tech\\HealthNewsWebApplication\\HealthNewsWebApplication\\wwwroot\\css\\site.css",
+      "SourceId": "HealthNewsWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Ashutosh\\Rxefy Tech\\HealthNewsWebApplication\\HealthNewsWebApplication\\wwwroot\\",
+      "BasePath": "_content/HealthNewsWebApplication",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

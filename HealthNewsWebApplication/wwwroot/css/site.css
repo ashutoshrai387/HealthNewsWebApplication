@@ -1,0 +1,117 @@
+﻿/* Base styling for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Styling for the main container */
+.news-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title of the page */
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Articles container */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual article box */
+.article-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Article image styling */
+.article-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Article content area */
+.article-content {
+    padding: 15px;
+}
+
+/* Article title styling */
+.article-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #007bff;
+}
+
+/* Article author styling */
+.article-author {
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Article description styling */
+.article-description {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Article date styling */
+.article-date {
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Read more link styling */
+.article-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .article-link:hover {
+        text-decoration: underline;
+    }
+
+/* No articles found styling */
+.no-articles {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* Add styles for the category dropdown */
+.category-form {
+    margin-bottom: 20px;
+}
+
+.category-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.category-form select {
+    padding: 5px;
+    font-size: 16px;
+}

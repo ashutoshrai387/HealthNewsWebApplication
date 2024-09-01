@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Ashutosh\\Rxefy Tech\\HealthNewsWebApplication\\HealthNewsWebApplication\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HealthNewsWebApplication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HealthNewsWebApplication.props",
+      "PackagePath": "build\\HealthNewsWebApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HealthNewsWebApplication.props",
+      "PackagePath": "buildMultiTargeting\\HealthNewsWebApplication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HealthNewsWebApplication.props",
+      "PackagePath": "buildTransitive\\HealthNewsWebApplication.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

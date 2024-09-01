@@ -1,0 +1,48 @@
+﻿@model List<HealthNewsWebApplication.Models.Article>
+
+@{
+    ViewData["Title"] = "News";
+    Layout = "_Layout";
+}
+
+<div class="news-container">
+    <!-- Category Dropdown -->
+    <form method="get" asp-action="Index" class="category-form">
+        <label for="category">Category:</label>
+        <select name="category" id="category" onchange="this.form.submit()">
+            <option value="Health" @(ViewData["SelectedCategory"]?.ToString() == "Health" ? "selected" : "")>Health</option>
+            <option value="Technology" @(ViewData["SelectedCategory"]?.ToString() == "Technology" ? "selected" : "")>Technology</option>
+            <option value="Sports" @(ViewData["SelectedCategory"]?.ToString() == "Sports" ? "selected" : "")>Sports</option>
+            <option value="Other" @(ViewData["SelectedCategory"]?.ToString() == "Other" ? "selected" : "")>Other</option>
+            <!-- Add more categories as needed -->
+        </select>
+    </form>
+
+    <h2 class="page-title">@ViewData["SelectedCategory"]?.ToString() News</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="articles">
+            @foreach (var article in Model)
+            {
+                <div class="article-box">
+                    @if (!string.IsNullOrEmpty(article.UrlToImage))
+                    {
+                        <img class="article-image" src="@article.UrlToImage" alt="Article Image" />
+                    }
+                    <div class="article-content">
+                        <h2 class="article-title">@article.Title</h2>
+                        <p class="article-author"><strong>Author:</strong> @article.Author</p>
+                        <p class="article-description">@article.Description</p>
+                        <p class="article-date"><small>Published on: @article.PublishedAt.ToString("MMMM d, yyyy")</small></p>
+                        <a class="article-link" href="@article.Url" target="_blank">Read more</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="no-articles">No articles found!</p>
+    }
+</div>
